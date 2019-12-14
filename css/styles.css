@@ -1,0 +1,175 @@
+@font-face {
+  font-family: GlacialIndifference;
+  src: url('/fonts/GlacialIndifference-Regular.otf') format('opentype');
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+    background-color: #f9ffff;
+    margin: 0;
+    font-family: GlacialIndifference, Futura;
+    color: #b0b4c1;
+    text-align: center;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h1 {
+  color: #d7bd98;
+  font-size: 8rem;
+  margin: 2rem 0 3rem 0;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 1rem 0 1.5rem 0;
+}
+
+h3 {
+  font-size: 1.6rem;
+  margin: 0.8rem 0 0.6rem 0;
+}
+
+p {
+  line-height: 2;
+  margin-bottom: 0.5rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.wrapper .content {
+  background-color: rgba(249, 255, 255, 0.75);
+  max-width: 800px;
+  margin: 3rem 1.5rem;
+  z-index: 10;
+}
+
+.content > article {
+  padding: 1.2rem 2rem;
+}
+
+form > div {
+  display: flex;
+  justify-content: flex-end;
+  padding: .5em;
+}
+
+form > div > * { flex-grow: 1; }
+
+form > div > label {
+  padding: .5em 1em .5em 0;
+  flex: 1;
+}
+
+form > div > input {
+  flex: 2;
+  background: #ffffff;
+  color: #696d79;
+  border: 1px solid #d7bd98;
+  border-radius: 5px;
+  padding: .5em 1em .5em 1em;
+}
+
+form > div > button {
+  background: #d7bd98;
+  color: #696d79;
+  font-size: 1.3em;
+  border: 0;
+  border-radius: 5px;
+  padding: .5em 0;
+}
+
+.frame-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+  overflow: hidden;
+  margin-bottom: -42px;
+}
+
+.frame-wrapper iframe {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.lauf {
+  background-image: url('/img/lauf.svg');
+  background-repeat: no-repeat;
+  background-size: 100vh;
+  background-position: center;
+  height: 100vh;
+  width: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 0;
+}
+
+#lauf-left.lauf {
+  left: -80vh;
+}
+#lauf-right.lauf {
+  right: -80vh;
+}
