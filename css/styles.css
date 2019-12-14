@@ -72,7 +72,7 @@ h1, h2, h3 {
 h1 {
   color: #d7bd98;
   font-size: 8rem;
-  margin: 2rem 0 3rem 0;
+  margin: 2rem 0 2.3rem 0;
 }
 
 h2 {
@@ -81,13 +81,19 @@ h2 {
 }
 
 h3 {
+  color: #d7bd98;
   font-size: 1.6rem;
   margin: 0.8rem 0 0.6rem 0;
 }
 
 p {
   line-height: 2;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: #b0b4c1;
+  font-weight: 800;
 }
 
 .wrapper {
@@ -97,20 +103,24 @@ p {
 }
 
 .wrapper .content {
-  background-color: rgba(249, 255, 255, 0.75);
+  background-color: rgba(249, 255, 255, 0.9);
   max-width: 800px;
-  margin: 3rem 1.5rem;
+  margin: 2rem 1.5rem;
   z-index: 10;
 }
 
 .content > article {
-  padding: 1.2rem 2rem;
+  padding: 0.8rem 2rem;
+}
+
+form {
+  margin-bottom: 1.5rem;
 }
 
 form > div {
   display: flex;
   justify-content: flex-end;
-  padding: .5em;
+  padding: .5rem;
 }
 
 form > div > * { flex-grow: 1; }
@@ -126,13 +136,13 @@ form > div > input {
   color: #696d79;
   border: 1px solid #d7bd98;
   border-radius: 5px;
-  padding: .5em 1em .5em 1em;
+  padding: .5rem 1rem .5rem 1rem;
 }
 
 form > div > button {
   background: #d7bd98;
-  color: #696d79;
-  font-size: 1.3em;
+  color: #3c5947;
+  font-size: 1.3rem;
   border: 0;
   border-radius: 5px;
   padding: .5em 0;
@@ -153,6 +163,11 @@ form > div > button {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.emphasis {
+  /*color: #70885d;*/
+  /*font-style: italic;*/
 }
 
 .lauf {

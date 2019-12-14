@@ -14,6 +14,22 @@
 
 <body>
 
+  <nav>
+    <div class="wrapper">
+      <ul>
+        <li>
+          <a href="#rsvp">Staðfestið komu</a>
+        </li>
+        <li>
+          <a href="#location">Staðsetning</a>
+        </li>
+        <li>
+          <a href="#gifts">Gjafir</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
   <div class="wrapper">
     <section class="content">
       <article>
@@ -25,13 +41,16 @@
 
         <h2>Við erum að fara gifta okkur!</h2>
 
-        <p>Athöfnin verður á bókasafni kópavogs klukkan 15:00. Veisla verður í beinu framhaldi í Safnaðarheimili Kópavogskirkju, Borgum.</p>
-        <p>Endilega hafið samband ef að einhverjar spurningar vakna. email & sími </p>
+        <p>Athöfnin verður á Bókasafni Kópavogs klukkan 15:00. Veisla verður í beinu framhaldi í Safnaðarheimili Kópavogskirkju, Borgum.</p>
+        <p class="emphasis">Endilega hafið samband ef að einhverjar spurningar vakna. Þið getið sent email á 
+          Heiðu, <a href="mailto:rak4@hi.is">rak4@hi.is</a>, eða Viktor, 
+          <a href="mailto:viktoralex@viktoralex.is">viktoralex@viktoralex.is</a>. Svo getið þið líka hringt í okkur. 
+          Heiða er í <a href="tel:+3546946645">694 6645</a> og Viktor í <a href="tel:+3546908701">690 8701</a>.</p>
       </article>
 
-      <article>
+      <article id="rsvp">
         <h3>Staðfesta komu</h3>
-        <p>Endilega skráið hérna hvort þið komist!</p>
+        <p>Endilega skráið hérna ef að þú/þið ætlið að koma!</p>
         <form id="rsvp-form">
           <div>
             <label>Nafnið þitt</label>
@@ -42,12 +61,12 @@
             <input type="text" name="maki" placeholder="Maki">
           </div>
           <div>
-            <label>Ofnæmi, fæðuóþol eða aðrar mataróskir</label>
-            <input type="text" name="oskir" placeholder="">
-          </div>
-          <div>
             <label>Netfang</label>
             <input type="text" name="netfang" placeholder="Netfang">
+          </div>
+          <div>
+            <label>Ofnæmi, fæðuóþol eða aðrar mataróskir</label>
+            <input type="text" name="oskir" placeholder="">
           </div>
           <div>
             <button type="submit">Staðfesta</button>
@@ -55,13 +74,18 @@
         </form>
       </article>
 
-      <article>
+      <article id="location">
         <h3>Staðsetning</h3>
-        <p>Hér fyrir neðan er hægt að sjá hvar athöfnin og veislan verða.</p>
+        <p>Hér fyrir neðan er hægt að sjá hvar athöfnin og veislan verða. Bláa bókasafnsmerkið sýnir hvar athöfnin verður en fjólubláa martíni glasið sýnir hvar athöfnin verður.</p>
         <div class="frame-wrapper">
           <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1T4xvJVKOIT_INYEm85RnpiLPDu_We_Z3" width="640" height="480"></iframe>
         </div>
-        <p>Hægt er að taka strætó á Hlemm og labba í bókasafnið (2mín). </p>
+        <p>Hægt er að taka strætó í Hamraborg og labba í bókasafnið (1 mínúta). Síðan er mjög stutt af bókasafninu í veislusalinn.</p>
+      </article>
+
+      <article id="gifts">
+        <h3>Gjafir</h3>
+        <p>Við erum að safna fyrir brúðkaupsferð og styrkir í formi beinharðra peninga eru vel þegnir. Annars munum við skrá okkur á gjafalista í einhverri búð og við munum láta vita hér.</p>
       </article>
     </section>
   </div>

@@ -15,9 +15,7 @@ $form.on('submit', function(e) {
   var jqxhr = $.ajax({
     url: url,
     method: "get",
-    //dataType: "json",
     data: $form.serialize(),
-    //data: JSON.stringify(data),
   }).success(
     // do something
   );
