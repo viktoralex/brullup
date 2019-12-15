@@ -4,19 +4,36 @@ var $form = $('form#rsvp-form'),
 $form.on('submit', function(e) {
   e.preventDefault();
 
-  var data = {
-    nafn: $form.find('input[name=nafn]').val(),
-    maki: $form.find('input[name=maki]').val(),
-    oskir: $form.find('input[name=oskir]').val(),
-    netfang: $form.find('input[name=netfang]').val(),
-  };
-  console.log(JSON.stringify(data));
+  var valid = true;
+
+  if (!$form.find('.nafn input').val()) {
+    valid = false;
+    $form.find('.nafn').addClass('error');
+  }
+
+  if (!$form.find('.netfang input').val()) {
+    valid = false;
+    $form.find('.netfang').addClass('error');
+  }
+
+  if (!valid) {
+    return;
+  }
+
+  $('#rsvp-form').prop('disabled', true);
+  $('#rsvp-form button').prop('disabled', true);
+
+  $('.form-wrapper .please-wait').removeClass('hidden');
 
   var jqxhr = $.ajax({
     url: url,
     method: "get",
     data: $form.serialize(),
-  }).success(
-    // do something
-  );
+  }).success(function () {
+    $('.form-wrapper .please-wait').addClass('hidden');
+    $('.form-wrapper .thank-you').removeClass('hidden');
+  }).fail(function () {
+    $('.form-wrapper .please-wait').addClass('hidden');
+    $('.form-wrapper .error').removeClass('hidden');
+  });
 })

@@ -118,9 +118,6 @@ nav ul li {
 
 }
 
-nav > ul > li > a {
-}
-
 .content {
   max-width: 800px;
   margin: 0 auto;
@@ -142,24 +139,54 @@ nav > ul > li > a {
   padding: 0.8rem 2rem;
 }
 
+.form-wrapper {
+  position: relative;
+}
+
+/*.form-wrapper > .thank-you {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(249, 255, 255, 0.8);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}*/
+
+.form-wrapper > .status {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(249, 255, 255, 0.8);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 form {
   margin-bottom: 1.5rem;
 }
 
-form > div {
+form .input {
   display: flex;
   justify-content: flex-end;
   padding: .5rem;
 }
 
-form > div > * { flex-grow: 1; }
+form .input > * { flex-grow: 1; }
 
-form > div > label {
+form .input > label {
   padding: .5em 1em .5em 0;
   flex: 1;
 }
 
-form > div > input {
+form .input > input {
   flex: 2;
   background: #ffffff;
   color: #696d79;
@@ -175,6 +202,26 @@ form > div > button {
   border: 0;
   border-radius: 5px;
   padding: .5em 0;
+}
+
+form > div > button:disabled {
+  background: rgba(215, 189, 152, 0.4);
+}
+
+.error {
+  color: #d48181;
+}
+
+.error-prompt {
+  display: none;
+}
+
+.error .error-prompt {
+  display: block;
+}
+
+.error .input input {
+  border: 1px solid #ab2e2e;
 }
 
 .frame-wrapper {
@@ -259,4 +306,8 @@ footer .footer-address {
 }
 #lauf-right.lauf {
   right: -80vh;
+}
+
+.wrapper .hidden {
+  display: none;
 }

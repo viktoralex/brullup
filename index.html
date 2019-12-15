@@ -50,28 +50,51 @@
 
       <article id="rsvp">
         <h3>Staðfesta komu</h3>
-        <p>Endilega skráið hérna ef að þú/þið ætlið að koma!</p>
-        <form id="rsvp-form">
-          <div>
-            <label>Nafnið þitt</label>
-            <input type="text" name="nafn" placeholder="Nafn">
+        <div class="form-wrapper">
+          <p>Endilega skráið hérna ef að þú/þið ætlið að koma! Vinsamlegast athugið að ekki er gert ráð fyrir börnum í giftingunni.</p>
+          <form id="rsvp-form">
+            <div class="nafn">
+              <div class="input">
+                <label>Nafnið þitt*</label>
+                <input type="text" name="nafn" placeholder="Nafn">
+              </div>
+              <p class="error-prompt">Þú verður að segja okkur hvað þú heitir!</p>
+            </div>
+            <div class="maki">
+              <div class="input">
+                <label>Nafn maka</label>
+                <input type="text" name="maki" placeholder="">
+              </div>
+            </div>
+            <div class="netfang">
+              <div class="input">
+                <label>Netfang*</label>
+                <input type="text" name="netfang" placeholder="Netfang">
+              </div>
+              <p class="error-prompt">Við viljum alveg endilega vera í bandi!</p>
+            </div>
+            <div class="oskir">
+              <div class="input">
+                <label>Ofnæmi, fæðuóþol eða aðrar mataróskir</label>
+                <input type="text" name="oskir" placeholder="">
+              </div>
+            </div>
+            <div class="input">
+              <button type="submit">Staðfesta</button>
+            </div>
+          </form>
+          <div class="status please-wait hidden">
+            <h3>Vinsamlegast bíðið</h3>
           </div>
-          <div>
-            <label>Nafn maka</label>
-            <input type="text" name="maki" placeholder="Maki">
+          <div class="status thank-you hidden">
+            <h2>Takk fyrir!</h1>
+            <h3>Hlökkum til að sjá þig/ykkur!</h3>
           </div>
-          <div>
-            <label>Netfang</label>
-            <input type="text" name="netfang" placeholder="Netfang">
+          <div class="status error hidden">
+            <h3>Eitthvað fór úrskeiðis.</h3>
+            <h3>Endilega reynið aftur síðar.</h3>
           </div>
-          <div>
-            <label>Ofnæmi, fæðuóþol eða aðrar mataróskir</label>
-            <input type="text" name="oskir" placeholder="">
-          </div>
-          <div>
-            <button type="submit">Staðfesta</button>
-          </div>
-        </form>
+        </div>
       </article>
 
       <article id="location">
