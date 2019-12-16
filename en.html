@@ -1,0 +1,159 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>We are getting married!</title>
+  <meta name="description" content="We are getting married!">
+  <meta name="author" content="Ragnheiður Ásta & Viktor Alex">
+
+  <link rel="stylesheet" href="/css/styles.css?v=1.0">
+
+</head>
+
+<body>
+
+  <nav>
+    <div class="content">
+      <ul>
+        <li>
+          <a href="#rsvp">RSVP</a>
+        </li>
+        <li>
+          <a href="#location">Location</a>
+        </li>
+        <li>
+          <a href="#gifts">Gifts</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="wrapper">
+    <section class="content">
+      <article>
+        <h2>Ragnheiður Ásta & Viktor Alex</h2>
+
+        <h1>
+          22.02.20
+        </h1>
+
+        <h2>We are getting married!</h2>
+
+        <p>The ceremony will be held at the Kópavogur Public Library. A reception will be held after the ceremony in the congregation hall of the church of Kópavogur, Borgir.
+        <p class="emphasis">Please don't hesitate to contact us if you have any questions. You can send us an email, Heiða at <a href="mailto:rak4@hi.is">rak4@hi.is</a> or Viktor at <a href="mailto:viktoralex@viktoralex.is">viktoralex@viktoralex.is</a>. You can also give us a ring, Heiða at <a href="tel:+3546946645">+354 694 6645</a> and Viktor at <a href="tel:+3546908701">+354 690 8701</a>.</p>
+      </article>
+
+      <article id="rsvp">
+        <h3>RSVP</h3>
+        <div class="form-wrapper">
+          <p>Register here if you can make it! Please note that we don't expect any children in the wedding</p>
+          <form id="rsvp-form">
+            <div class="nafn">
+              <div class="input">
+                <label>Your name*</label>
+                <input type="text" name="nafn" placeholder="Name">
+              </div>
+              <p class="error-prompt">Please tell us your name.</p>
+            </div>
+            <div class="maki">
+              <div class="input">
+                <label>Partners name</label>
+                <input type="text" name="maki" placeholder="">
+              </div>
+            </div>
+            <div class="netfang">
+              <div class="input">
+                <label>Email*</label>
+                <input type="text" name="netfang" placeholder="Netfang">
+              </div>
+              <p class="error-prompt">We want to keep in touch!</p>
+            </div>
+            <div class="oskir">
+              <div class="input">
+                <label>Any allergies and/or food preferences</label>
+                <input type="text" name="oskir" placeholder="">
+              </div>
+            </div>
+            <div class="input">
+              <button type="submit">Confirm</button>
+            </div>
+          </form>
+          <div class="status please-wait hidden">
+            <h3>Please wait</h3>
+          </div>
+          <div class="status thank-you hidden">
+            <h2>Thank you!</h2>
+            <h3>We look forward to seeing you!</h3>
+          </div>
+          <div class="status error hidden">
+            <h3>Something went wrong.</h3>
+            <h3>Please try again later.</h3>
+          </div>
+        </div>
+      </article>
+
+      <article id="location">
+        <h3>Location</h3>
+        <p>Below you can see where the ceremony and the reception will be held. The blue library token shows where the ceremony will be held and the purple martini glass shows where the reception will be.
+        <div class="frame-wrapper">
+          <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1T4xvJVKOIT_INYEm85RnpiLPDu_We_Z3" width="640" height="480"></iframe>
+        </div>
+        <p>You can take a bus to Hamraborg and walk to the library (1 minute walk). A very short walk separates the library and the congregation hall.</p>
+      </article>
+
+      <article id="gifts">
+        <h3>Gifts</h3>
+        <p>We have a collection for a honeymoon trip and any contributions are welcome. We will also register for a gift registry in a well chosen store and when we've actually chosen one we'll add it here.</p>
+      </article>
+    </section>
+  </div>
+
+  <footer>
+    <div class="content">
+      <div class="footer-address">
+        <div class="address-card">
+          <div class="name">Bókasafn Kópavogs</div>
+          <div class="Address">
+            <p>Hamraborg 6a</p>
+            <p>200 Kópavogur</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-contact">
+        <div class="contact-card">
+          <div class="name">Ragnheiður Ásta Karlsdóttir</div>
+          <div class="info">
+            <div><a href="mailto:rak4@hi.is">rak4@hi.is</a></div>
+            <div><a href="tel:+3546946645">694 6645</a></div>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="name">Viktor Alex Brynjarsson</div>
+          <div class="info">
+            <div><a href="mailto:viktoralex@viktoralex.is">viktoralex@viktoralex.is</a></div>
+            <div><a href="tel:+3546908701">690 8701</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-address">
+        <div class="address-card">
+          <div class="name">Safnaðarheimili<br>Kópavogskirkju,<br>Borgir</div>
+          <div class="Address">
+            <p>Hábraut 1a</p>
+            <p>200 Kópavogur</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="lauf-left" class="lauf"></div>
+  <div id="lauf-right" class="lauf"></div>  
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="/js/scripts.js"></script>
+</body>
+
+</html>
