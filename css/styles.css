@@ -117,6 +117,14 @@ nav ul li {
 
 }
 
+nav .flag {
+  text-decoration: none;
+}
+
+nav .flag .text {
+  text-decoration: underline;
+}
+
 .content {
   max-width: 800px;
   margin: 0 auto;
